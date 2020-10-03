@@ -11,4 +11,10 @@ spring:
           search-paths: config
           username: wzffzm
           password: wz1127002601@sina.com
-      label: main
+      label: master
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
